@@ -47,8 +47,6 @@ type Client struct {
 
 	tempSessionKey []byte
 
-	ConnectionTimeout time.Duration
-
 	mutex     sync.RWMutex // guarding conn and writeChan
 	conn      connection
 	writeChan chan IMsg
